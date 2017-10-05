@@ -2,6 +2,7 @@
 const http = require('http');
 
 const config = require('./../../config');
+
 exports.local_meteo = ((req, res) => {
     http.get(config.openWeatherMapServerUri + config.openWeatherMapApiUri + 'weather?q=Nantes,fr&appid=' + config.openWeatherMapApiKey
         , ((resGet) => {
@@ -20,7 +21,6 @@ exports.local_meteo = ((req, res) => {
                 rawData += chunk;
             });
             resGet.on('end', () => {
-                console.log('meteo : res->end');
                 try {
                     const parsedData = JSON.parse(rawData);
                     res.json(parsedData);
