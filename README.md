@@ -3,7 +3,7 @@ A map for bikers, allowing them to have informations about meteo, pollution, met
 
 ## Getting Started
 
-You can get a copy of the project [here](https://github.com/Knudian/bicycle/).
+You can get a copy of the main project [here](https://github.com/Knudian/bicycle/).
 Once his dependencies have been launched, you can run it.
 See [Dependencies](#Dependencies) for further explanations of how to deploy this project.
 
@@ -13,20 +13,13 @@ See [Deployment notes](#Installing) for further explanations of how to deploy th
 
 To deploy the project, you'll need:
 - [NodeJs](https://nodejs.org/)
+- [Nodemon](https://nodemon.io/)
 
 ### Dependencies
 
-To run this project, you need to run others projects too:
+The project is part of [Bicycle](https://github.com/Knudian/bicycle/).
 
-- [Bicycle Meteo](https://github.com/Knudian/bicycle_meteo/)
-- [Bicycle Pollution](https://github.com/Knudian/bicycle_pollution/)
-- [Bicycle Meteo Alerts](https://github.com/Knudian/bicycle_meteoAlerts/)
-- [Bicycle Thefts](https://github.com/Knudian/bicycle_robbery/)
-Each of those are micro-services deserving the main project with JSON infos
-
-- [Bicycle Notifier](https://github.com/Knudian/bicycle_notifier/)
-- [Bicycle Mailer](https://github.com/Knudian/bicycle_mq/)
-Those projects notifies the users of the main project.
+This project use [Open Weather Map](https://openweathermap.org/) API.
 
 ### Installing
 
@@ -34,13 +27,7 @@ Those projects notifies the users of the main project.
 npm install
 ```
 
-It runs in your port 3000. Protect yourself !
-
-
-## Built With
-
-* [React](https://reactjs.org/) - The web framework used
-* [React Strap](https://reactstrap.github.io) - Dependency Management
+It runs in your port 3100. Protect yourself !
 
 ## Versioning
 
