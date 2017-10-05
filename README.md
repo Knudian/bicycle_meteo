@@ -29,6 +29,9 @@ npm install
 
 It runs in your port 3100. Protect yourself !
 
+### Documentation
+Load swagger.json on [Swagger](https://github.com/Knudian/bicycle_meteo).
+
 ## Versioning
 
 We use [GitHub](http://github.com/) for versioning. 
